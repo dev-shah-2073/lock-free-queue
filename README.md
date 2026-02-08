@@ -15,3 +15,25 @@ lock-free-queue/
 |-- benchmark.cpp               # For benchmarking
 |-- README.md                   # Project documentation
 </pre>
+
+## Performance Comparison: Lock-Free Queue vs Mutex Queue
+
+This project compares a Single-Producer Single-Consumer (SPSC) lock-free queue with a traditional mutex-based queue, focusing on end-to-end latency under concurrent producer–consumer workloads.
+
+### Test Results
+
+All latencies are measured in nanoseconds (ns). <br/>
+
+<pre>
+Lock-free queue
+Latency (ns):
+  p50   = 5,862,958
+  p99   = 6,180,416
+  p99.9 = 6,243,375
+
+Mutex queue
+Latency (ns):
+  p50   = 16,099,375
+  p99   = 19,314,792
+  p99.9 = 19,735,000
+</pre>
