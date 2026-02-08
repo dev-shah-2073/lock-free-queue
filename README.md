@@ -37,3 +37,14 @@ Latency (ns):
   p99   = 19,314,792
   p99.9 = 19,735,000
 </pre>
+
+## What Do These Metrics Mean?
+
+* p50 (median latency)<br/>
+  50% of operations complete faster than this value.
+
+* p99 latency<br/>
+  99% of operations complete faster than this value.
+
+* p99.9 latency<br>
+  Represents worst-case performance.
